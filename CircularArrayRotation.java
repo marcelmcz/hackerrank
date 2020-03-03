@@ -12,7 +12,6 @@ public class CircularArrayRotation {
     static int[] circularArrayRotation(int[] a, int k, int[] queries) {
         for(int i=0;i<queries.length;i++)           
             queries[i] = a[Math.floorMod((queries[i]-k), a.length)];
-
         return queries;
     }
 
